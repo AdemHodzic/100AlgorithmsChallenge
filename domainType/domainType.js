@@ -1,8 +1,9 @@
+"use strict";
 function domainType(domains) {
-    var arr = [];
-    var extensions = [];
-    domains.forEach(function (e) { return extensions.push(e.split('.').reverse()[0]); });
-    extensions.forEach(function (e) {
+    const arr = [];
+    const extensions = [];
+    domains.forEach(e => extensions.push(e.split('.').reverse()[0]));
+    extensions.forEach(e => {
         switch (e) {
             case 'org':
                 arr.push('organization');

@@ -1,7 +1,8 @@
+"use strict";
 function chunkyMonkey(arr, size) {
-    var finalArr = [];
-    var counter = 0;
-    var length = arr.length;
+    let finalArr = [];
+    let counter = 0;
+    let length = arr.length;
     while (counter < length) {
         finalArr.push(arr.slice(0, size));
         counter += size;

@@ -1,11 +1,10 @@
+"use strict";
 function absoluteValuesSumMinimization(a) {
-    var solution = Number.MAX_VALUE;
-    for (var _i = 0; _i < a.length; _i++) {
-        var number = a[_i];
-        var temp_solution = 0;
-        for (var _a = 0; _a < a.length; _a++) {
-            var element = a[_a];
-            temp_solution += Math.floor(Math.abs(element - number));
+    let solution = Number.MAX_VALUE;
+    for (const number of a) {
+        let temp_solution = 0;
+        for (const element of a) {
+            temp_solution += Math.abs(element - number);
         }
         if (temp_solution < solution) {
             solution = temp_solution;

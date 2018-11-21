@@ -1,12 +1,13 @@
+"use strict";
 function addBorder(picture) {
-    var len = picture[0].length;
+    const len = picture[0].length;
     console.log(len);
-    var new_picture = picture.slice();
-    var aster_lines = '';
-    for (var i = 0; i < len; i++) {
+    const new_picture = picture.slice();
+    let aster_lines = '';
+    for (let i = 0; i < len; i++) {
         aster_lines += '*';
     }
-    for (var i = 0; i < picture.length; i++) {
+    for (let i = 0; i < picture.length; i++) {
         new_picture[i] = '*' + picture[i] + '*';
     }
     new_picture.unshift(aster_lines);

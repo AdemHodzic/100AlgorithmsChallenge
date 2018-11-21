@@ -1,3 +1,4 @@
+"use strict";
 function firstNotRepeatingCharacter(s) {
     let arr = [];
     for (let char of s) {

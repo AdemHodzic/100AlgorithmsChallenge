@@ -1,8 +1,9 @@
+"use strict";
 function arrayMaxConsecutiveSum(inputArray, k) {
-    var sum = 0;
-    for (var i = 0; i < (inputArray.length - k); i++) {
-        var new_sum = 0;
-        for (var j = 0; j < k; j++) {
+    let sum = 0;
+    for (let i = 0; i < (inputArray.length - k); i++) {
+        let new_sum = 0;
+        for (let j = 0; j < k; j++) {
             new_sum += inputArray[i + j];
         }
         if (new_sum > sum) {

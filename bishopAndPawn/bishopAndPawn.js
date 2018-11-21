@@ -1,6 +1,7 @@
+"use strict";
 function bishopAndPawn(bishopStr, pawnStr) {
-    var bishop = calculatePosition(bishopStr);
-    var pawn = calculatePosition(pawnStr);
+    let bishop = calculatePosition(bishopStr);
+    let pawn = calculatePosition(pawnStr);
     if (checkFirst(bishop, pawn) || checkSecond(bishop, pawn)) {
         return true;
     }
@@ -41,9 +42,9 @@ function checkSecond(bishop, pawn) {
     return false;
 }
 function calculatePosition(str) {
-    var arr = [];
-    var column = str.charAt(0);
-    var row = parseInt(str.charAt(1)) - 1;
+    const arr = [];
+    const column = str.charAt(0);
+    const row = parseInt(str.charAt(1)) - 1;
     switch (column) {
         case 'a':
             arr.push(0);

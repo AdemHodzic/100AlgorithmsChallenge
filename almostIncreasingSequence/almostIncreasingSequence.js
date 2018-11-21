@@ -1,6 +1,7 @@
+"use strict";
 function almostIncreasingSequence(sequence) {
-    for (var i = 0; i < sequence.length; i++) {
-        var new_arr = sequence.slice();
+    for (let i = 0; i < sequence.length; i++) {
+        const new_arr = sequence.slice();
         new_arr.splice(i, 1);
         if (sorted(new_arr)) {
             return true;
@@ -9,8 +10,8 @@ function almostIncreasingSequence(sequence) {
     return false;
 }
 function sorted(array) {
-    var sorted = array.slice().sort(function (a, b) { return a - b; });
-    for (var i = 0; i < array.length; i++) {
+    const sorted = array.slice().sort((a, b) => a - b);
+    for (let i = 0; i < array.length; i++) {
         if (array[i] !== sorted[i]) {
             return false;
         }

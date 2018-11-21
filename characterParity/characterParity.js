@@ -1,3 +1,4 @@
+"use strict";
 function characterParity(symbol) {
     if (isNaN(parseInt(symbol))) {
         return 'not a digit';

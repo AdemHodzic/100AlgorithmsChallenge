@@ -1,14 +1,14 @@
+"use strict";
 function avoidObstacles(arr) {
-    var jumps = [];
-    arr = arr.sort(function (a, b) { return a - b; });
-    for (var i = arr[0] + 1; i < arr[1]; i++) {
+    let jumps = [];
+    arr = arr.sort((a, b) => a - b);
+    for (let i = arr[0] + 1; i < arr[1]; i++) {
         jumps.push(i);
     }
-    for (var _i = 0; _i < jumps.length; _i++) {
-        var jump = jumps[_i];
-        var correct = true;
-        var temp_jump = jump;
-        while (temp_jump < Math.max.apply(Math, arr)) {
+    for (let jump of jumps) {
+        let correct = true;
+        let temp_jump = jump;
+        while (temp_jump < Math.max(...arr)) {
             if (arr.indexOf(temp_jump) !== -1) {
                 correct = false;
                 break;

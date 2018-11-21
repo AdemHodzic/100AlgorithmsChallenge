@@ -1,6 +1,6 @@
+"use strict";
 function firstDigit(inputString) {
-    for (var _i = 0, _a = inputString.split(''); _i < _a.length; _i++) {
-        var char = _a[_i];
+    for (let char of inputString.split('')) {
         if (char.match(/[0-9]/)) {
             return char;
         }

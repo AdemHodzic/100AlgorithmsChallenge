@@ -1,8 +1,8 @@
+"use strict";
 function companyBotStrategy(trainingData) {
-    var sum = 0;
-    var counter = 0;
-    for (var _i = 0; _i < trainingData.length; _i++) {
-        var arr = trainingData[_i];
+    let sum = 0;
+    let counter = 0;
+    for (let arr of trainingData) {
         if (arr[1] === 1) {
             sum += arr[0];
             counter++;

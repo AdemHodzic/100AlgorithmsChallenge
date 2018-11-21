@@ -1,8 +1,9 @@
+"use strict";
 function digitDegree(n) {
-    var counter = 0;
-    var reduced = n.toString().split('')
-        .map(function (x) { return parseInt(x); })
-        .reduce(function (a, b) { return a + b; }, 0);
+    let counter = 0;
+    let reduced = n.toString().split('')
+        .map((x) => parseInt(x))
+        .reduce((a, b) => a + b, 0);
     if (reduced < 10) {
         return 0;
     }
@@ -10,8 +11,8 @@ function digitDegree(n) {
     while (reduced > 9) {
         counter++;
         reduced = reduced.toString().split('')
-            .map(function (x) { return parseInt(x); })
-            .reduce(function (a, b) { return a + b; }, 0);
+            .map((x) => parseInt(x))
+            .reduce((a, b) => a + b, 0);
     }
     return counter;
 }

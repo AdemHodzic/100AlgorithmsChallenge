@@ -1,7 +1,8 @@
+"use strict";
 function electionsWinners(votes, k) {
-    var winners = votes.length;
-    var maximum = Math.max.apply(Math, votes);
-    votes.forEach(function (e) {
+    let winners = votes.length;
+    let maximum = Math.max(...votes);
+    votes.forEach(e => {
         if (e + k <= maximum) {
             winners--;
         }

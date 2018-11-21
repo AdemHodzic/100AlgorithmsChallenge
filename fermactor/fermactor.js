@@ -1,8 +1,9 @@
+"use strict";
 function fermactor(n) {
-    var arr = [];
-    var d = 1;
+    const arr = [];
+    let d = 1;
     while (true) {
-        var c = n + Math.pow(d, 2);
+        let c = n + Math.pow(d, 2);
         if (isNatural(c)) {
             arr.push(c);
             arr.push(d);

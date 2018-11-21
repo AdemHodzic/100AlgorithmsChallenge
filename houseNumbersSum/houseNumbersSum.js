@@ -1,7 +1,7 @@
+"use strict";
 function houseNumbersSum(inputArray) {
-    var sum = 0;
-    for (var _i = 0; _i < inputArray.length; _i++) {
-        var num = inputArray[_i];
+    let sum = 0;
+    for (let num of inputArray) {
         if (num !== 0) {
             sum += num;
         }

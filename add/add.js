@@ -1,12 +1,9 @@
+"use strict";
 function add(param1, param2) {
     return param1 + param2;
 }
-function add2() {
-    var param1 = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        param1[_i - 0] = arguments[_i];
-    }
-    return param1.reduce(function (prev, next) { return prev + next; }, 0);
+function add2(...param1) {
+    return param1.reduce((prev, next) => prev + next, 0);
 }
 console.log(add(1, 2));
 console.log(add(3, 2));

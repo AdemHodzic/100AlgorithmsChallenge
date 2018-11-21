@@ -1,8 +1,9 @@
+"use strict";
 function alphabetSubsequence(s) {
-    var alpha = ('abcdefghijklmnopqrstuvwxyz').split('');
-    for (var i = 0; i < s.length; i++) {
-        var char = s.charAt(i);
-        var index = alpha.indexOf(char);
+    let alpha = ('abcdefghijklmnopqrstuvwxyz').split('');
+    for (let i = 0; i < s.length; i++) {
+        const char = s.charAt(i);
+        const index = alpha.indexOf(char);
         if (index !== -1) {
             alpha.splice(index, 1);
         }

@@ -1,7 +1,8 @@
+"use strict";
 function crossingSum(matrix, a, b) {
-    var sum1 = matrix[a].reduce(function (a, b) { return a + b; }, 0);
-    var sum2 = 0;
-    matrix.forEach(function (arr) {
+    const sum1 = matrix[a].reduce((a, b) => a + b, 0);
+    let sum2 = 0;
+    matrix.forEach(arr => {
         sum2 += arr[b];
     });
     return sum1 + sum2;

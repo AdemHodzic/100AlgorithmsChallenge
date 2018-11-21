@@ -1,7 +1,7 @@
+"use strict";
 function containsDuplicates(a) {
-    var arr = [];
-    for (var _i = 0; _i < a.length; _i++) {
-        var i = a[_i];
+    let arr = [];
+    for (let i of a) {
         if (arr.indexOf(i) === -1) {
             arr.push(i);
         }

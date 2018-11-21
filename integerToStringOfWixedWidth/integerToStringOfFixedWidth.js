@@ -1,8 +1,9 @@
+"use strict";
 function integerToStringOfFixedWidth(number, width) {
-    var result = number.toString();
+    let result = number.toString();
     if (result.length > width) {
-        var start = result.length - width;
-        var end = result.length;
+        const start = result.length - width;
+        const end = result.length;
         result = result.substring(start, end);
     }
     else if (result.length < width) {

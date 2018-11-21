@@ -1,5 +1,6 @@
+"use strict";
 function containsCloseNums(nums, k) {
-    for (var i = 0, j = k; j < nums.length; i++, j++) {
+    for (let i = 0, j = k; j < nums.length; i++, j++) {
         if (nums[i] === nums[j]) {
             return true;
         }
